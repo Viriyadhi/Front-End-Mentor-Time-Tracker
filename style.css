@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2rem;
+    grid-template-columns: 13rem repeat(3, 14rem);
+    grid-template-rows: repeat(2, 13rem);
+    grid-template-areas: "sidebar component-1 component-2 component-3" "sidebar component-4 component-5 component-6";
+    background-color: hsl(226, 43%, 10%);
+    border-radius: 1rem;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.sidebar,
+.component-1,
+.component-2,
+.component-3,
+.component-4,
+.component-5,
+.component-6 {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+}
+
+.component-1,
+.component-2,
+.component-3,
+.component-4,
+.component-5,
+.component-6 {
+    margin: 2.2rem 0 0 0;
+    height: 84%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.img-jeremy {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 1.5rem 0 0 1.5rem;
+}
+
+.sidebar-component h5 {
+    margin: 1rem 0 0 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+.sidebar-component h1 {
+    margin: 0.75rem 0 0 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 40px;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+h6 {
+    color: white;
+    font-weight: 300;
+    margin-left: 1.5rem;
+    margin-top: -1rem;
+    color: lightgray;
+}
+
+.sidebar p {
+    font-weight: 300;
+    margin: 1rem 0 0 1.5rem;
+}
+
+p[id="1"] {
+    color: lightgray;
+}
+
+p[id="2"] {
+    color: white;
+}
+
+p[id="3"] {
+    color: lightgray;
+}
+
+.component-1 {
+    grid-area: component-1;
+}
+
+.component-2 {
+    grid-area: component-2;
+}
+
+.component-3 {
+    grid-area: component-3;
+}
+
+.component-4 {
+    grid-area: component-4;
+}
+
+.component-5 {
+    grid-area: component-5;
+}
+
+.component-6 {
+    grid-area: component-6;
+}
+
+.sidebar-component,
+.work-component,
+.play-component,
+.study-component,
+.exercise-component,
+.social-component,
+.self-care-component {
+    border-radius: 1rem;
+}
+
+.work-component,
+.play-component,
+.study-component,
+.exercise-component,
+.social-component,
+.self-care-component {
+    border-radius: 1rem 1rem 2rem 2rem;
+}
+
+.sidebar-component {
+    background-color: hsl(246, 80%, 60%);
+    height: 70%;
+}
+
+.work-component {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -0.9rem;
+}
+
+.play-component {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -0.9rem;
+}
+
+.study-component {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -0.9rem;
+}
+
+.exercise-component {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -0.9rem;
+}
+
+.social-component {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -0.9rem;
+}
+
+.self-care-component {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-y: -0.9rem;
+}
+
+@media (max-width: 1000xpx) {}
